@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beytullah Ayar – Frontend Developer</title>
+  <meta name="description" content="Beytullah Ayar, junior frontend developer. API-driven web apps and real business websites with HTML, CSS and JavaScript. Open to roles in the Netherlands.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="splash" id="splash"><div><b>beytullah.dev</b><span>Portfolio loading</span><i></i></div></div>
+
+  <header class="nav">
+    <a class="logo" href="#home">beytullah.dev</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme" id="theme" aria-label="Switch light or dark theme">☀</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero view">
+      <div class="hero-text reveal">
+        <p class="label"><span class="dot"></span>Available for work · Netherlands</p>
+        <h1>Frontend <span>Developer</span></h1>
+        <p class="sub">Junior Programmer<i class="caret"></i></p>
+        <p class="lead">I'm Beytullah Ayar, 18, a Web Design and Coding student at Bingöl University. I build responsive websites and API-driven apps with HTML, CSS and JavaScript, and I put them online so people can use them.</p>
+        <div class="actions">
+          <a class="btn solid" href="Beytullah_Ayar_CV (1).pdf" download>Download CV</a>
+          <a class="btn" href="#work">View projects</a>
+        </div>
+      </div>
+
+      <div class="badge-wrap reveal">
+        <span class="chip c1">JavaScript · main language</span>
+        <span class="chip c2">Live site for a Rotterdam shop</span>
+        <div class="swing" id="swing">
+          <div class="lanyard"></div>
+          <div class="badge">
+            <div class="badge-top"></div>
+            <img class="avatar" id="avatar" src="photos/profile.jpg" alt="Beytullah Ayar" draggable="false">
+            <b>Beytullah Ayar</b>
+            <span>Frontend Developer</span>
+            <small>Bingöl University · 2026</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats reveal view" data-view="home">
+      <div><b>3</b><span>Projects</span></div>
+      <div><b>1</b><span>Certificate</span></div>
+      <div><b>1</b><span>Real client site</span></div>
+    </section>
+
+    <section id="work" class="view">
+      <div class="head reveal">
+        <p class="label">Selected works</p>
+        <h2>Portfolio Showcase</h2>
+        <p>Explore my projects, certificate and technical skills.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button role="tab" class="on" data-tab="projects">Projects</button>
+        <button role="tab" data-tab="certs">Certificates</button>
+        <button role="tab" data-tab="stack">Tech Stack</button>
+      </div>
+
+      <div class="panel on" id="projects">
+        <article class="card">
+          <h3>Weather App</h3>
+          <p class="what">Type a city and see the current weather.</p>
+          <p>Sends a request to a weather API with <code>fetch</code>, waits with <code>async/await</code> and shows temperature, conditions and wind. Shows a clear message if the city is not found or the request fails.</p>
+          <ul class="tags"><li>JavaScript</li><li>Fetch API</li><li>REST API</li></ul>
+          <div class="links"><a href="https://beytullahayar.github.io/weather-app/">Live demo</a><a href="https://github.com/beytullahayar/weather-app">Code</a></div>
+        </article>
+        <article class="card">
+          <h3>Currency Converter</h3>
+          <p class="what">Convert currencies with today's rates.</p>
+          <p>Loads live exchange rates from an API and calculates the result from the amount and the two currencies you pick. Input is checked before converting.</p>
+          <ul class="tags"><li>JavaScript</li><li>REST API</li><li>async/await</li></ul>
+          <div class="links"><a href="https://beytullahayar.github.io/currency-converter/">Live demo</a><a href="https://github.com/beytullahayar/currency-converter">Code</a></div>
+        </article>
+        <article class="card">
+          <h3>Yeşilçam Pastanesi</h3>
+          <p class="what">A live website for a patisserie shop in Rotterdam.</p>
+          <p>A fully responsive site with a dark glass-style design, built remotely for a real client and in active use today. I handled the requirements, layout and deployment.</p>
+          <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+          <div class="links"><a href="https://yesssilcam.github.io/yesilcampatisserie-menu/">Live demo</a><a href="https://github.com/beytullahayar/resproje1">Code</a></div>
+        </article>
+        <article class="card next">
+          <h3>Coming next</h3>
+          <p class="what">E-commerce catalogue with a cart.</p>
+          <p>A product list with a cart saved in <code>localStorage</code>, so it survives a reload.</p>
+          <ul class="tags"><li>In progress</li></ul>
+        </article>
+      </div>
+<div class="panel" id="certs">
+  <div class="cert-grid">
+    <figure class="cert" data-full="meb.jpeg">
+      <img src="meb.jpeg" alt="Official Business Opening and Trade Certificate" loading="lazy">
+      <figcaption>
+        <b>Official Business Opening &amp; Trade Certificate</b>
+        <span>IT &amp; Software · T.C. Ministry of National Education · Jun 2025</span>
+      </figcaption>
+    </figure>
+
+    <figure class="cert" data-full="cisco.jpeg">
+      <img src="cisco.jpeg" alt="Cisco PCAP Programming Essentials in Python certificate" loading="lazy">
+      <figcaption>
+        <b>PCAP – Programming Essentials in Python</b>
+        <span>Cisco Networking Academy · May 2022</span>
+      </figcaption>
+    </figure>
+
+    <figure class="cert" data-full="cloude.jpeg">
+      <img src="cloude.jpeg" alt="Anthropic Claude course certificate" loading="lazy">
+      <figcaption>
+        <b>Anthropic Claude Course Completion</b>
+        <span>BTK Academy · Oct 2026</span>
+      </figcaption>
+    </figure>
+
+    <figure class="cert" data-full="chat.jpeg">
+      <img src="chat.jpeg" alt="ChatGPT course certificate" loading="lazy">
+      <figcaption>
+        <b>ChatGPT Course Completion</b>
+        <span>BTK Academy · Oct 2026</span>
+      </figcaption>
+    </figure>
+
+    <figure class="cert" data-full="gamma.jpeg">
+      <img src="gamma.jpeg" alt="Gamma AI course certificate" loading="lazy">
+      <figcaption>
+        <b>Gamma AI Course Completion</b>
+        <span>BTK Academy · Oct 2026</span>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+      <div class="panel" id="stack">
+        <div class="tiles">
+          <div><img src="html.jpg" alt="HTML5" class="tech-icon"><span>HTML5</span></div>
+          <div><img src="css.png" alt="CSS3" class="tech-icon"><span>CSS3</span></div>
+          <div><img src="js.jpg" alt="JavaScript" class="tech-icon"><span>JavaScript</span></div>
+          <div><img src="rest.png" alt="API" class="tech-icon"><span>REST · Fetch</span></div>
+          <div><img src="github.png" alt="Git" class="tech-icon"><span>Git · GitHub</span></div>
+          <div><img src="pyhon.png" alt="Python" class="tech-icon"><span>Python</span></div>
+          <div><img src="win.png" alt="Windows" class="tech-icon"><span>Windows OS</span></div>
+          <div><img src="net.png" alt="Network" class="tech-icon"><span>Network cabling</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="view">
+      <div class="head reveal">
+        <p class="label">Career path</p>
+        <h2>Experience and Education</h2>
+      </div>
+      <ol class="tl">
+        <li class="reveal"><h3>Information Technologies – Software</h3><p>Sep 2023 – Jun 2025<br>Şehit Yüzbaşı Yusuf Kenan Vocational and Technical Anatolian High School</p></li>
+        <li class="reveal"><h3>IT Support / Help Desk Intern</h3><p>Sep 2024 – Jun 2025 · Teknofix, Istanbul<br>Help desk and field support, hardware troubleshooting, network cabling, Windows support.</p></li>
+        <li class="reveal"><h3>Official Business Opening &amp; Trade Certificate</h3><p>Jun 2025<br>IT &amp; Software, T.C. Ministry of National Education.</p></li>
+        <li class="reveal"><h3>Freelance Web Developer</h3><p>Sep 2026 – Present · Remote<br>Built and deployed a responsive live website for a patisserie shop in Rotterdam, working remotely.</p></li>
+        <li class="reveal"><h3>Bingöl University</h3><p>Sep 2026 – Jun 2028<br>Associate degree, Web Design and Coding.</p></li>
+      </ol>
+    </section>
+
+    <section id="resume" class="view">
+      <div class="head reveal">
+        <p class="label">Resume</p>
+        <h2>The CV I send with applications</h2>
+      </div>
+
+      <article class="cv-sheet reveal">
+        <h3 class="cv-name">Beytullah Ayar</h3>
+        <p class="cv-role">Junior Frontend / Web Developer</p>
+        <p class="cv-meta">Türkiye (open to relocate to the Netherlands) | <a href="mailto:beytullahayr12@gmail.com">beytullahayr12@gmail.com</a> | <a href="https://github.com/beytullahayar">github.com/beytullahayar</a></p>
+
+        <h4>Summary</h4>
+        <p>Junior web developer with hands-on experience building responsive websites and API-driven web applications using HTML5, CSS3 and JavaScript (ES6+). Delivered a live website for a patisserie shop in Rotterdam, Netherlands, working remotely as a freelance developer. Previous experience in IT support and help desk. Seeking an internship or junior developer position in the Netherlands.</p>
+
+        <h4>Technical Skills</h4>
+        <p><b>Front end:</b> HTML5, CSS3, responsive web design, JavaScript (ES6+), DOM manipulation</p>
+        <p><b>APIs and data:</b> REST API, Fetch API, JSON, async/await</p>
+        <p><b>Tools:</b> Git, GitHub, GitHub Pages, Python, browser developer tools</p>
+        <p><b>IT support:</b> Help desk, technical support, hardware troubleshooting, hardware installation, network cabling, Windows OS, field support</p>
+
+        <h4>Professional Experience</h4>
+        <div class="cv-job">
+          <p class="cv-title">Freelance Web Developer</p>
+          <p class="cv-meta">Self-employed | Remote | Sep 2026 – Present</p>
+          <ul>
+            <li>Designed, developed and deployed a fully responsive live website for a patisserie shop based in Rotterdam, Netherlands (remote project, in active use).</li>
+            <li>Managed client requirements, modern UI layout and production deployment.</li>
+            <li>Built with HTML5, CSS3 and JavaScript and published on GitHub Pages.</li>
+          </ul>
+        </div>
+        <div class="cv-job">
+          <p class="cv-title">IT Support / Help Desk Technician (Intern)</p>
+          <p class="cv-meta">Teknofix | Maltepe, Istanbul, Türkiye | Sep 2024 – Jun 2025</p>
+          <ul>
+            <li>Provided IT support and help desk assistance, including on-site field support.</li>
+            <li>Performed hardware installation and troubleshooting, network cabling and Windows OS support.</li>
+          </ul>
+        </div>
+
+        <h4>Projects</h4>
+        <ul>
+          <li><b>Weather App</b> – Web application that shows live weather by city using a weather REST API, Fetch API and async/await. <a href="https://beytullahayar.github.io/weather-app/">Live demo</a> | <a href="https://github.com/beytullahayar/weather-app">Code</a></li>
+          <li><b>Currency Converter</b> – Web application that converts currencies using live exchange rates from a REST API. <a href="https://beytullahayar.github.io/currency-converter/">Live demo</a> | <a href="https://github.com/beytullahayar/currency-converter">Code</a></li>
+          <li><b>Yeşilçam Pastanesi Website</b> – Responsive business website with a dark glass-style design, built for a real client. <a href="https://yesssilcam.github.io/yesilcampatisserie-menu/">Live demo</a></li>
+        </ul>
+
+        <h4>Education</h4>
+        <div class="cv-job">
+          <p class="cv-title">Associate Degree, Web Design and Coding</p>
+          <p class="cv-meta">Bingöl University | Sep 2026 – Jun 2028 (expected)</p>
+        </div>
+        <div class="cv-job">
+          <p class="cv-title">High School Diploma, Information Technologies – Software</p>
+          <p class="cv-meta">Şehit Yüzbaşı Yusuf Kenan Vocational and Technical Anatolian High School | Sep 2023 – Jun 2025</p>
+        </div>
+
+        <h4>Certifications</h4>
+        <p>Official Business Opening &amp; Trade Certificate (Information Technology &amp; Software), T.C. Ministry of National Education, Jun 2025</p>
+      </article>
+      <p class="center reveal"><a class="btn solid" href="Beytullah_Ayar_CV (1).pdf" download>Download CV (PDF)</a></p>
+    </section>
+
+    <section id="contact" class="view">
+      <div class="head reveal">
+        <p class="label">Contact</p>
+        <h2>Let's talk</h2>
+        <p>I plan to apply for a Dutch visa this winter. If you are hiring for an internship or junior role, write to me.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <form id="mail-form" class="card">
+          <h3>Send a message</h3>
+          <label>Your name<input id="f-name" required></label>
+          <label>Message<textarea id="f-msg" rows="5" required></textarea></label>
+          <button class="btn solid" type="submit">Open in my email app</button>
+        </form>
+        <div class="card connect">
+          <h3>Connect</h3>
+          <a href="mailto:beytullahayr12@gmail.com">Email<span>beytullahayr12@gmail.com</span></a>
+          <a href="https://github.com/beytullahayar">GitHub<span>github.com/beytullahayar</span></a>
+          <a href="https://www.instagram.com/beytullahaayar?stkn=aHhtZmpqcTkxdzgx&utm_source=qr" target="_blank" rel="noopener">Instagram<span>@beytullahaayar</span></a>
+          <a href="https://www.linkedin.com/in/beytullah-ayar-28b2a6262" target="_blank" rel="noopener">LinkedIn<span>Beytullah Ayar</span></a>
+          <a href="Beytullah_Ayar_CV.pdf" download>CV<span>Download PDF</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Beytullah Ayar</footer>
+
+  <div class="lightbox" id="lightbox"><button class="lb-close" id="lb-close" aria-label="Close">✕</button><img alt="Certificate enlarged"></div>
+  <script src="script.js"></script>
+</body>
+</html>
